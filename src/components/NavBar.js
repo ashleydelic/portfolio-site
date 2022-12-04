@@ -1,11 +1,11 @@
 import React from 'react';
-import {GiSkills, } from 'react-icons/fa';
+import {FaThList, FaRegWindowClose} from 'react-icons/fa';
 
 function NavBar() {
   return (
     <div>
-     <div>
-         <h1 className='text-4xl font-bold font-signature'>Ashley</h1>
+     <div className='flex justify-between items-center w-full h-20 text-white fixed'>
+         <FaThList />
       
     </div>
     </div>
