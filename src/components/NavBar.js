@@ -31,7 +31,7 @@ const NavBar = () => {
         </li>
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-3 z-10">
+      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-3 z-10 md:hidden">
          {nav ? <FaRegWindowClose size={20} /> : <FaThList size={20}/>}
       </div>
 
