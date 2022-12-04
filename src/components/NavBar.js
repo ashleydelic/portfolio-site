@@ -4,9 +4,9 @@ import {FaThList, FaRegWindowClose} from 'react-icons/fa';
 const NavBar = () => {
 
   return (
-    <div className='flex justify-between items-center w-full h-20 text-white bg-orange-400 px-4 fixed'>
+    <div className='hidden md:flex justify-between items-center w-full h-20 text-white bg-orange-400 px-4 fixed'>
      <div>
-         <h1 className='text-4xl font-signature ml-3'>Ashley</h1>
+         <h1 className='text-4xl font-signature ml-3 cursor-pointer hover:scale-105 duration-200'>Ashley</h1>
     </div>
 
     <ul className='flex'>
