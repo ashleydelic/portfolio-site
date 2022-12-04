@@ -10,6 +10,11 @@ const Home = () => {
              <h2>Hello! I'm Ashley.</h2>
              <p>As a self-taught software developer, my joy comes from building robust, intuitive and user-friendly interfaces.</p>
          </div>
+         <div>
+             <button>
+                 Portfolio <BiArrowFromLeft />
+             </button>
+         </div>
      </div>
     </div>
   )
