@@ -4,7 +4,8 @@ import {GiSkills, } from 'react-icons/fa';
 function NavBar() {
   return (
     <div>
-     <div className='fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-500 text-white shadow-lg'>
+     <div>
+         <h1 className='text-4xl font-bold font-signature'>Ashley</h1>
       
     </div>
     </div>
