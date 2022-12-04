@@ -26,8 +26,8 @@ const NavBar = () => {
         </li>
       </ul>
 
-      <div className="cursor-pointer pr-3 z-10 text-green-700">
-          <FaThList size={20}/>
+      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-3 z-10 text-green-700">
+         {nav ? <FaRegWindowClose size={20} /> : <FaThList size={20}/>}
       </div>
     </div>
   );
