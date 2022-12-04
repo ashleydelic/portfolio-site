@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaThList, FaRegWindowClose } from "react-icons/fa";
-
+import AshleyIcon from './src/assets/ashley-icon.png';
 
 const NavBar = () => {
 
@@ -10,10 +10,7 @@ const NavBar = () => {
     
     <div className="flex justify-between items-center w-full h-20 text-white bg-orange-400 px-4 fixed">
     <div>
-      <div className="text-2xl font-signature ml-3 cursor-pointer hover:scale-105 duration-200">
-        <p className="px-3">Ashley</p>
-        <p className=" text-white rounded bg-green-700 px-4">Delić</p>
-      </div>
+      <img src={AshleyIcon} width="20px" />
     </div>
 
       <ul className="md:flex hidden mt-2 md:text-[22px] tracking-widest">
