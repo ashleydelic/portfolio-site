@@ -31,16 +31,19 @@ const NavBar = () => {
         </li>
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-3 z-10 text-green-800">
+      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-3 z-10">
          {nav ? <FaRegWindowClose size={20} /> : <FaThList size={20}/>}
       </div>
 
-      <ul className="flex justify-center flex-col items-center absolute top-0 left-0 w-full h-screen bg-transparent bg-gray-600 text-white">
-          <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">Skills</li>
-          <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">About</li>
-          <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">Projects</li>
-          <li  className="py-4 px-4  cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">Contact</li>
-      </ul>
+      { nav && (
+              <ul className="flex justify-center flex-col items-center absolute top-0 left-0 w-full h-screen bg-transparent bg-gray-600 text-white">
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">Skills</li>
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">About</li>
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">Projects</li>
+              <li  className="py-4 px-4  cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">Contact</li>
+          </ul>
+      )}
+
     </div>
   );
 };
