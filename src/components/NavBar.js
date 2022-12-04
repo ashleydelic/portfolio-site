@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaThList, FaRegWindowClose } from "react-icons/fa";
 
 const NavBar = () => {
+    const [nav, setNav] = useState(false);
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-orange-400 px-4 fixed">
       <div>
@@ -10,7 +11,7 @@ const NavBar = () => {
         </h1>
       </div>
 
-      <ul className="md:flex hidden">
+      <ul className="md:flex hidden mt-2 md:text-[22px] tracking-widest">
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
           Skills
         </li>
@@ -25,7 +26,7 @@ const NavBar = () => {
         </li>
       </ul>
 
-      <div className="cursor-pointer ">
+      <div className="cursor-pointer pr-3 z-10 text-green-700">
           <FaThList size={20}/>
       </div>
     </div>
