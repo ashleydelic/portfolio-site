@@ -27,6 +27,12 @@ const About = () => {
           creativity.
         </p>
       </div>
+
+      <div>
+          <div>
+              <img src={AboutPic} alt="computer gif" width={100} />
+          </div>
+      </div>
     </div>
   );
 };
