@@ -1,5 +1,6 @@
 import React from "react";
 import AboutPic from "../assets/motion-back.gif";
+import { SiJavascript, SiGit, SiReact, SiHtml5, SiCss3, SiTailwindcss, SiFigma } from 'react-icons/si';
 
 const About = () => {
   return (
@@ -9,18 +10,20 @@ const About = () => {
     >
       <div className=" p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
         <div>
-          <h1 className="md:text-3xl text-2xl mb-4 font-medium">About Me</h1>
+          <h1 className="md:text-3xl text-2xl mb-4 font-medium underline">About Me</h1>
         </div>
-        <p className="md:text-lg text-base tracking-wider leading-relaxed">
+        <p className="md:text-lg text-1xl tracking-wider leading-relaxed">
           Excited is an understatement! 😄 Hi again, I'm Ashley Delić, a
           Front-end developer based out of Kentucky, USA but born and raised in
           South Africa . From traveling the world as a cruise ship spa therapist
           ⛴, to finding my passion in writing self-taught lines of code 👩🏾‍💻.
         <br></br>
+        <br></br>
           I am proficient in HTML, CSS, and JavaScript, as well as the React
           framework, still learning others as well. I have been implementing my
           knowledge and keeping track of my personal projects by storing them
           with Git and GitHub.
+          <br></br>
         <br></br>
           I am thrilled to take the leap and kickstart my career and learn among
           professionals, diversity and inclusion are the real grounds for
@@ -30,7 +33,11 @@ const About = () => {
 
       <div>
           <div>
-              <img src={AboutPic} alt="computer gif" width={500} />
+              <img src={AboutPic} alt="computer gif" width={300} />
+              <div>
+                  <h2 className="text-2xl underline">Toolkit</h2>
+
+              </div>
           </div>
           
       </div>
