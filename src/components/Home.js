@@ -16,6 +16,7 @@ const Home = () => {
          <div>
              <img src={HeroImage} alt='my illustration' className=' rounded-3xl mx-auto px-3 w-2/3 md:w-2/3' />
          </div>
+
      </div>
     </div>
   )
