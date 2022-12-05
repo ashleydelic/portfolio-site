@@ -10,9 +10,9 @@ const About = () => {
     >
       <div className=" p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
         <div>
-          <h1 className="md:text-3xl text-2xl mb-4 font-medium underline">About Me</h1>
+          <h1 className="md:text-3xl text-2xl mb-4 font-medium inline border-b-4 border-gray-500">About Me</h1>
         </div>
-        <p className="md:text-lg text-1xl tracking-wider leading-relaxed">
+        <p className="md:text-lg text-1xl tracking-wider pt-3 leading-relaxed">
           Excited is an understatement! 😄 Hi again, I'm Ashley Delić, a
           Front-end developer based out of Kentucky, USA but born and raised in
           South Africa . From traveling the world as a cruise ship spa therapist
