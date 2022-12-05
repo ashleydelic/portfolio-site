@@ -29,7 +29,7 @@ const SocialLinks = () => {
               </a>
           </li>
           <li className='flex justify-between items-center w-40 h-14 px-4 bg-slate-400 rounded-b-md text-white ml-[-100px] hover:ml-[10px] hover:rounded-md duration-200'>
-              <a href="" className='flex justify-between items-center w-full'>
+              <a href="" className='flex justify-between items-center w-full'> 
               <>
              Resume <BsFilePerson size={30}/>
               </>
