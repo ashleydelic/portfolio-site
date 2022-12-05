@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="about-page flex md:flex-row flex-row justify-between lg:px-16 px-6 pt-36 md:pb-24 sm:pb-28 pb-36 from-white to-slate-300"
+      className="about-page flex md:flex-row flex-row justify-evenly lg:px-16 px-6 pt-36 md:pb-24 sm:pb-28 pb-36 from-white to-slate-300"
     >
       <div className=" p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
         <div>
@@ -30,8 +30,9 @@ const About = () => {
 
       <div>
           <div>
-              <img src={AboutPic} alt="computer gif" width={100} />
+              <img src={AboutPic} alt="computer gif" width={500} />
           </div>
+          
       </div>
     </div>
   );
