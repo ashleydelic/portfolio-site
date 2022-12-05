@@ -8,18 +8,13 @@ const Home = () => {
      <div className=' max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row'>
          <div className='flex flex-col justify-center h-full'>
              <h1 className='text-4xl sm:text-4xl font-bold font-effect-fire-animation'>Hello! I'm Ashley 👋🏽.</h1>
-             <p className=' py-4'>As a self-taught front-end developer, my joy comes from building fun, intuitive and user-friendly interfaces.</p>
+             <p className=' py-5 text-2xl'>As a self-taught front-end developer, my joy ignites from building and seeing fun, intuitive and user-friendly interfaces come to life!</p>
          </div>
          <div>
-             <button>
-                 Portfolio 
-                 <span>
-                 <BiArrowFromLeft />
-                 </span>
-             </button>
+             
          </div>
          <div>
-             <img src={HeroImage} alt='my illustration' className=' rounded-2xl mx-auto w-2/10 md:w-full' />
+             <img src={HeroImage} alt='my illustration' className=' rounded-3xl mx-auto w-2/3 md:w-2/3' />
          </div>
      </div>
     </div>
