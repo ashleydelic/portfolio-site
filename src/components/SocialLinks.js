@@ -5,8 +5,16 @@ import {BsFilePerson} from 'react-icons/bs';
 
 const SocialLinks = () => {
   return (
-    <div >
-      Social Links
+    <div className='flex flex-col top-[35%] left-0 fixed'>
+      <ul>
+          <li className='flex justify-between items-center w-40 h-1/4 px-4 bg-slate-400 text-white'>
+              <a href="" className='flex justify-between items-center w-full'>
+              <>
+             LinkedIn <FaLinkedin />
+              </>
+              </a>
+          </li>
+      </ul>
     </div>
   )
 }
