@@ -1,6 +1,6 @@
 import React from "react";
 import AboutPic from "../assets/motion-back.gif";
-import { SiJavascript, SiGit, SiReact, SiHtml5, SiCss3, SiTailwindcss, SiFigma } from 'react-icons/si';
+
 
 const About = () => {
   return (
@@ -33,11 +33,7 @@ const About = () => {
 
       <div>
           <div>
-              <img src={AboutPic} alt="computer gif" width={300} />
-              <div>
-                  <h2 className="text-2xl underline">Toolkit</h2>
-
-              </div>
+              <img src={AboutPic} alt="computer gif" width={500} />
           </div>
           
       </div>
