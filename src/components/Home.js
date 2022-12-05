@@ -19,7 +19,7 @@ const Home = () => {
              </button>
          </div>
          <div>
-             <img src={HeroImage} alt='my illustration' className=' rounded-2xl mx-auto w-2/3 md:w-full' />
+             <img src={HeroImage} alt='my illustration' className=' rounded-2xl mx-auto w-2/10 md:w-full' />
          </div>
      </div>
     </div>
