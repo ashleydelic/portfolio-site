@@ -9,9 +9,53 @@ import ReactIcon from '../assets/icons/react-icon.png';
 import TailwindIcon from '../assets/icons/tailwind-icon.png';
 import VscIcon from '../assets/icons/vsc-icon.png';
 
+
 const Toolkit = () => {
+
+  const icons = [
+   {
+     id: 1,
+     src: HTML5,
+     title: "HTML5"
+   },
+   {
+     id: 2,
+     src: CssIcon,
+     title: "CSS"
+   },
+   {
+     id: 3,
+     src: JsIcon,
+     title: "JavaScript"
+   },
+   {
+     id: 4,
+     src: ReactIcon,
+     title: "React"
+   },
+   {
+     id: 5,
+     src: TailwindIcon,
+     title: "Tailwind CSS"
+   },
+   {
+     id: 6,
+     src: GitHubIcon,
+     title: "GitHub"
+   },
+   {
+     id: 7,
+     src: FigmaIcon,
+     title: "Figma"
+   },
+   {
+     id: 8,
+     src: NodeIcon,
+     title: "Nodejs"
+   }
+  ]
   return (
-    <div id="toolkit" className=' bg-gradient-to-b from-white to-slate-100'>
+    <div id="toolkit" className=' bg-gradient-to-b from-white to-slate-100 w-full h-screen'>
       <div>
         <div>
           <p>My Toolkit</p>
@@ -20,7 +64,7 @@ const Toolkit = () => {
 
         <div>
           <div>
-            <HTML5 size={40} />
+            <img src={HTML5} />
             <p>HTML5</p>
           </div>
         </div>
