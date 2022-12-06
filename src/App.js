@@ -3,8 +3,9 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import SocialLinks from './components/SocialLinks'
 import About from './components/About'
-import Projects
- from './components/Projects'
+import Projects from './components/Projects'
+import Toolkit from './components/Toolkit'
+
 function App() {
   return (
   <div>
@@ -12,6 +13,7 @@ function App() {
     <Home />
     <About />
     <Projects />
+    <Toolkit />
 
     <SocialLinks />
   </div>

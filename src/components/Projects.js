@@ -13,7 +13,11 @@ const Projects = () => {
     const portfolio = [
         {
             id: 1,
-            src: WeatherApp
+            title: "Playtime Weather",
+            body: "This is a simple kids weather app, built with Reactjs and CSS using the OpenWeatherMap API. The user can input their local city's name and it will return whether its a good day to play outside or its best to have indoor fun instead (based on the description from when they start the app).",
+            src: WeatherApp,
+            liveLink: "https://playtimeweather.netlify.app/",
+            codeLink: "https://github.com/ashleydelic/play-weather-app"
         },
         {
             id: 2,
@@ -46,15 +50,17 @@ const Projects = () => {
           </div>
 
 
-<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-12 px-12 sm:px-0'>
+<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
 
 {
-              portfolio.map(({id, src}) => (
+              portfolio.map(({id, title, src, body, liveLink, codeLink}) => (
                 <div key={id} className='shadow-md shadow-green-300 rounded-lg'>
-                <img src={src} alt="weather app" className='rounded-md duration-200 hover:scale-105' />
+                    {title}
+                <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
+                {body}
                 <div className='flex items-center justify-center'>
-                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>View Live</button>
-                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Codebase</button>
+                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={liveLink} target="_blank">View Live</a></button>
+                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={codeLink} target="_blank">Codebase</a></button>
                 </div>
                 
             </div>
