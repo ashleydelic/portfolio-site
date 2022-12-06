@@ -10,7 +10,7 @@ const About = () => {
     >
       <div className=" p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
         <div className="flex">
-          <h1 className="md:text-3xl text-2xl mb-4 font-medium pl-12 border-gray-500">About Me</h1>
+          <h1 className="md:text-3xl text-2xl mb-4 font-medium pl-12 ">About Me</h1>
         </div>
         <p className="md:text-md text-1xl tracking-wider pt-3 pl-12 leading-relaxed text-gray-500 ">
           Excited is an understatement! 😄 Hi again, I'm Ashley Delić, a
