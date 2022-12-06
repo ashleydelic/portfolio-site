@@ -15,41 +15,49 @@ const Toolkit = () => {
       id: 1,
       src: HTML5,
       title: "HTML5",
+      style: 'shadow-blue-400'
     },
     {
       id: 2,
       src: CssIcon,
       title: "CSS",
+      style: 'shadow-orange-400'
     },
     {
       id: 3,
       src: JsIcon,
       title: "JavaScript",
+      style: 'shadow-orange-400'
     },
     {
       id: 4,
       src: ReactIcon,
       title: "React",
+      style: 'shadow-cyan-200'
     },
     {
       id: 5,
       src: TailwindIcon,
       title: "Tailwind CSS",
+      style: 'shadow-cyan-500'
     },
     {
       id: 6,
       src: GitHubIcon,
       title: "GitHub",
+      style: "shadow-cyan-400"
     },
     {
       id: 7,
       src: FigmaIcon,
       title: "Figma",
+      style: "shadow-red-300"
     },
     {
       id: 8,
       src: NodeIcon,
       title: "Nodejs",
+      style: 'shadow-green-400'
     },
   ];
   return (
@@ -64,10 +72,10 @@ const Toolkit = () => {
         </div>
 
         <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {icons.map(({ id, title, src }) => (
-            <div key={id} className="hover:scale-105 duration-500 shadow-md shadow-green-300 rounded-lg p-1 text-center">
+          {icons.map(({ id, title, src, style }) => (
+            <div key={id} className={`hover:scale-105 duration-500 shadow-md rounded-lg p-1 text-center ${style}`}>
               <div className="p-12">
-              <img src={src} className="p-8 self-center" />
+              <img src={src} className="w-20 mx-auto " />
               </div>
             <div className=" text-green-800 ">
               {title}
