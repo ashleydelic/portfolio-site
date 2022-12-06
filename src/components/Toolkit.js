@@ -59,6 +59,13 @@ const Toolkit = () => {
       title: "Nodejs",
       style: 'shadow-green-400'
     },
+    {
+      id: 9,
+      src: VscIcon,
+      title: "Visual Studio Code",
+      style: 'shadow-cyan-400'
+    },
+
   ];
   return (
     <div
