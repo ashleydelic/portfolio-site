@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-full h-20 text-white bg-orange-400 px-4 fixed">
     <div>
     <div className="text-2xl font-signature ml-3 cursor-pointer hover:scale-105 duration-200">
-        <p className="px-3 font-effect-fire-animation">Ashley</p>
+        <p className="px-3 text-white">Ashley</p>
         <p className=" text-white rounded bg-green-700 px-4">Delić</p>
       </div>
 
