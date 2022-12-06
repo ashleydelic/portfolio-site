@@ -14,18 +14,27 @@ const Projects = () => {
         {
             id: 1,
             title: "Playtime Weather",
-            body: "This is a simple kids weather app, built with Reactjs and CSS using the OpenWeatherMap API. The user can input their local city's name and it will return whether its a good day to play outside or its best to have indoor fun instead (based on the description from when they start the app).",
+            body: "This is a simple kids weather app, built with Reactjs and CSS using the OpenWeatherMap API. The user can input their local city's name and it will return whether its a good day to play outside or its best to have indoor fun instead (based on the description from when they start the app). Deployed with Netlify",
             src: WeatherApp,
             liveLink: "https://playtimeweather.netlify.app/",
             codeLink: "https://github.com/ashleydelic/play-weather-app"
         },
         {
             id: 2,
-            src: CounterApp
+            title: "CountHydrants",
+            body: "Fire hydrant interactive counting app inspired by my toddler. Built with HTML, CSS and Javascript. It's purpose is mainly for fun. Every time we spot a fire hydrant, we made a mental count. This is app will make it easier to keep track of the number of fire hydrants. Using an increment and decrement feature, also deployed with Netlify",
+            src: CounterApp,
+            liveLink: "https://firehydrantcounter.netlify.app/",
+            codeLink: "https://github.com/ashleydelic/fire-hydrant-counter"
+
         },
         {
             id: 3,
-            src: PortfolioApp
+            title: "This page",
+            body: "I enjoyed building this site so i felt that it deserved a place in this section. It was built with React and Tailwind CSS from scratch, Tailwind has been a bit challenging as i kept referencing from the Tailwind site, but eventually got the hang of it. Mobile development has also been kept in mind although it still needs a few more fixes. To be updated... ",
+            src: PortfolioApp,
+            liveLink: "",
+            codeLink: "https://github.com/ashleydelic/portfolio-site"
         },
         {
             id: 4,
@@ -42,7 +51,7 @@ const Projects = () => {
     ]
 
   return (
-    <div id='projects' className='w-full md:h-screen'>
+    <div id='projects' className='w-full md:h-full'>
       <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
           <div className='pb-8 '>
               <p className='md:text-3xl text-2xl mb-4 font-medium'>Projects</p>
