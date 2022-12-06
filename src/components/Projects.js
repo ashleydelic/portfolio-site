@@ -38,7 +38,7 @@ const Projects = () => {
         },
         {
             id: 4,
-            title: "For My Child",
+            title: "Listen Here, My Child",
             body: "This is a random quote generator that will make kids laugh or brighten their day, built with HTML, CSS and Javascript. This generator displays a random quote along with the author name. A new quote is displayed on a button click. Deployed with Netlify",
             src: QuoteApp,
             liveLink: "https://kidquotegenerator.netlify.app/",
@@ -64,7 +64,7 @@ const Projects = () => {
     ]
 
   return (
-    <div id='projects' className='w-full md:h-full'>
+    <div id='projects' className='w-full md:h-full bg-gradient-to-b from-white to-amber-50'>
       <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
           <div className='pb-8 '>
               <p className='md:text-3xl text-2xl mb-4 font-medium'>Projects</p>
@@ -72,7 +72,7 @@ const Projects = () => {
           </div>
 
 
-<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
 
 {
               portfolio.map(({id, title, src, body, liveLink, codeLink}) => (

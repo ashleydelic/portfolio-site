@@ -3,10 +3,18 @@ import { SiJavascript, SiGit, SiReact, SiHtml5, SiCss3, SiTailwindcss, SiFigma, 
 
 const Toolkit = () => {
   return (
-    <div>
+    <div id="toolkit" className=' bg-gradient-to-b from-white to-slate-100'>
       <div>
         <div>
-          <p></p>
+          <p>My Toolkit</p>
+          <p>These are the technologies I have worked with so far...</p>
+        </div>
+
+        <div>
+          <div>
+            <SiHtml5 size={40} />
+            <p>HTML5</p>
+          </div>
         </div>
       </div>
     </div>

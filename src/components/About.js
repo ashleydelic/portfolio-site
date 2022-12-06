@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about-page h-screen w-full flex md:flex-row flex-row justify-evenly mb-40 lg:px-16 px-8 pt-36 md:pb-24 sm:pb-28 pb-36 from-white to-slate-300"
+      className="about-page h-screen w-full flex md:flex-row flex-row justify-evenly mb-40 lg:px-16 px-8 pt-36 md:pb-24 sm:pb-28 pb-36"
     >
       <div className=" p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
         <div className="flex">

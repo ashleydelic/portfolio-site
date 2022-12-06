@@ -27,6 +27,9 @@ const NavBar = () => {
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#projects">Projects</a>
           
         </li>
+        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#toolkit">Toolkit</a>
+          
+        </li>
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800"><a href="#contact">Contact</a>
           
         </li>
