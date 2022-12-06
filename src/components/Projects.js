@@ -14,7 +14,7 @@ const Projects = () => {
         {
             id: 1,
             title: "Playtime Weather",
-            body: "This is a simple kids weather app, built with Reactjs and CSS using the OpenWeatherMap API. The user can input their local city's name and it will return whether its a good day to play outside or its best to have indoor fun instead (based on the description from when they start the app). Deployed with Netlify",
+            body: "This is a simple kids weather app, built with Reactjs and CSS using the OpenWeatherMap API, my first time using an API. The user can input their local city's name and it will return whether its a good day to play outside or its best to have indoor fun instead (based on the description from when they start the app). Deployed with Netlify.",
             src: WeatherApp,
             liveLink: "https://playtimeweather.netlify.app/",
             codeLink: "https://github.com/ashleydelic/play-weather-app"
@@ -38,15 +38,28 @@ const Projects = () => {
         },
         {
             id: 4,
-            src: QuoteApp
+            title: "For My Child",
+            body: "This is a random quote generator that will make kids laugh or brighten their day, built with HTML, CSS and Javascript. This generator displays a random quote along with the author name. A new quote is displayed on a button click. Deployed with Netlify",
+            src: QuoteApp,
+            liveLink: "https://kidquotegenerator.netlify.app/",
+            codeLink: "https://github.com/ashleydelic/kid-quote-generator"
+
         },
         {
             id: 5,
-            src: BlackJackApp
+            title: "21 Blackjack",
+            body: "This is a Blackjack app built with HTML, CSS and Javascript. The dealer (computer) allows you to draw two cards, your cards should sum up to 21 to win Blackjack, you can draw a new card if no Blackjack but still below 21, once above that, its a loss.",
+            src: BlackJackApp,
+            liveLink: "https://21blackjack-ashley.netlify.app/",
+            codeLink: "https://github.com/ashleydelic/blackjack-app"
         },
         {
             id: 6,
-            src: DoughApp
+            title: "Dough Guide",
+            body: "This was the first landing page I ever made, with the teachings of The Odin Project, built with HTML and CSS. It has no links or functionality, it was mainly for practice, especially with CSS flexbox. Hopefully it will be improved and functional",
+            src: DoughApp,
+            liveLink: "https://doughguide.netlify.app/",
+            codeLink: "https://github.com/ashleydelic/dough-landing-page"
         }
     ]
 
@@ -64,11 +77,19 @@ const Projects = () => {
 {
               portfolio.map(({id, title, src, body, liveLink, codeLink}) => (
                 <div key={id} className='shadow-md shadow-green-300 rounded-lg'>
-                    {title}
-                <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
+
+                    <div className=' text-green-800 p-4 font-semibold'>
+                        {title} 
+                    </div>
+                <img src={src} alt="project on devices" className='rounded-md duration-200 hover:scale-105' />
+
+                <div className=' p-4 text-gray-500 text-base font-medium'>
                 {body}
-                <div className='flex items-center justify-center'>
-                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={liveLink} target="_blank">View Live</a></button>
+                </div>
+                
+                
+                <div className='flex items-center justify-center text-amber-900 text-2xl '>
+                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={liveLink} target="_blank">Live</a></button>
                     <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={codeLink} target="_blank">Codebase</a></button>
                 </div>
                 
