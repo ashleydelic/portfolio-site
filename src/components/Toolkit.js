@@ -70,7 +70,7 @@ const Toolkit = () => {
   return (
     <div
       id="toolkit"
-      className=" bg-gradient-to-b from-white to-slate-100 w-full h-screen mt-40 sm:mt64 md:h-full"
+      className=" bg-gradient-to-b from-white to-slate-100 w-full h-screen mt-40 sm:h-full sm:mt64 md:h-full"
     >
       <div className=" max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full 0">
         <div className="pb-8">
@@ -78,7 +78,7 @@ const Toolkit = () => {
           <p className="py-6 text-gray-500">These are the technologies I've worked with so far...</p>
         </div>
 
-        <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid w-full grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 sm:px-0">
           {icons.map(({ id, title, src, style }) => (
             <div key={id} className={`hover:scale-105 duration-500 shadow-md rounded-lg p-1 text-center ${style}`}>
               <div className="p-12">
