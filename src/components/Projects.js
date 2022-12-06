@@ -4,6 +4,7 @@ import CounterApp from '../assets/counter-app.png';
 import PortfolioApp from '../assets/portfolio-app.png';
 import QuoteApp from '../assets/quote-app.png';
 import BlackJackApp from '../assets/blackjack-app.png';
+import DoughApp from '../assets/dough-app.png';
 
 
 
@@ -29,11 +30,15 @@ const Projects = () => {
         {
             id: 5,
             src: BlackJackApp
+        },
+        {
+            id: 6,
+            src: DoughApp
         }
     ]
 
   return (
-    <div name='projects' className='w-full md:h-screen'>
+    <div id='projects' className='w-full md:h-screen'>
       <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
           <div className='pb-8 '>
               <p className='md:text-3xl text-2xl mb-4 font-medium'>Projects</p>
@@ -41,7 +46,7 @@ const Projects = () => {
           </div>
 
 
-<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-12 px-12 sm:px-0'>
 
 {
               portfolio.map(({id, src}) => (

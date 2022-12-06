@@ -9,7 +9,7 @@ const string = [
 
 const Home = () => {
   return (
-    <div name='home' className=' h-screen w-full '>
+    <div id='home' className=' h-screen w-full '>
      <div className=' max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row'>
          <div className='flex flex-col justify-center h-full'>
              <h1 className='text-4xl sm:text-4xl font-bold '>{" "} <Typewriter
@@ -21,7 +21,7 @@ const Home = () => {
          <div>
              
          </div>
-         <div>
+         <div className=' ml-10'>
              <img src={HeroImage} alt='my illustration' className=' rounded-3xl mx-auto px-3 w-2/3 md:w-2/3' />
          </div>
 

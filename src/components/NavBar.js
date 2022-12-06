@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaThList, FaRegWindowClose } from "react-icons/fa";
 
+
 const NavBar = () => {
 
     const [nav, setNav] = useState(false);
@@ -17,17 +18,17 @@ const NavBar = () => {
     </div>
 
       <ul className="md:flex hidden mt-2 md:text-[22px] tracking-widest">
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-          Home
+        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#home">Home</a>
+          
         </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-          About Me
+        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#about">About me</a>
+          
         </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-          Projects
+        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#projects">Projects</a>
+          
         </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">
-          Contact
+        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800"><a href="#contact">Contact</a>
+          
         </li>
       </ul>
 
@@ -37,7 +38,7 @@ const NavBar = () => {
 
       { nav && (
               <ul className="flex justify-center flex-col items-center absolute top-0 left-0 w-full h-screen bg-transparent bg-gray-600 text-white">
-              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">Home</li>
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#Home"></a>Home</li>
               <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">About Me</li>
               <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">Projects</li>
               <li  className="py-4 px-4  cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">Contact</li>
