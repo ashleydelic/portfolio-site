@@ -5,6 +5,7 @@ import SocialLinks from './components/SocialLinks'
 import About from './components/About'
 import Projects from './components/Projects'
 import Toolkit from './components/Toolkit'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <About />
     <Projects />
     <Toolkit />
+    <Contact />
 
     <SocialLinks />
   </div>
