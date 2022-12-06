@@ -6,16 +6,16 @@ const About = () => {
   return (
     <div
       name="about"
-      className="about-page flex md:flex-row flex-row justify-evenly lg:px-16 px-6 pt-36 md:pb-24 sm:pb-28 pb-36 from-white to-slate-300"
+      className="about-page h-screen w-full flex md:flex-row flex-row justify-evenly lg:px-16 px-8 pt-36 md:pb-24 sm:pb-28 pb-36 from-white to-slate-300"
     >
       <div className=" p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
-        <div>
-          <h1 className="md:text-3xl text-2xl mb-4 font-medium inline border-b-4 border-gray-500">About Me</h1>
+        <div className="flex">
+          <h1 className="md:text-3xl text-2xl mb-4 font-medium pl-12 border-gray-500">About Me</h1>
         </div>
-        <p className="md:text-lg text-1xl tracking-wider pt-3 leading-relaxed">
+        <p className="md:text-md text-1xl tracking-wider pt-3 pl-12 leading-relaxed text-gray-500 ">
           Excited is an understatement! 😄 Hi again, I'm Ashley Delić, a
           Front-end developer based out of Kentucky, USA but born and raised in
-          South Africa . From traveling the world as a cruise ship spa therapist
+          South Africa. From traveling the world as a cruise ship spa therapist
           ⛴, to finding my passion in writing self-taught lines of code 👩🏾‍💻.
         <br></br>
         <br></br>
@@ -33,7 +33,7 @@ const About = () => {
 
       <div>
           <div>
-              <img src={AboutPic} alt="computer gif" width={500} />
+              <img src={AboutPic} alt="computer gif" width={400} />
           </div>
           
       </div>
