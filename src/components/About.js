@@ -1,5 +1,8 @@
 import React from "react";
 import AboutPic from "../assets/motion-back.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 const About = () => {
@@ -12,7 +15,7 @@ const About = () => {
         <div className="flex">
           <h1 className="md:text-3xl text-2xl mb-4 font-medium pl-12 ">About Me</h1>
         </div>
-        <p className="md:text-md text-1xl tracking-wider pt-3 pl-12 leading-relaxed text-gray-500 ">
+        <p data-AOS="fade-right" data-aos-duration="1500" className="md:text-md text-1xl tracking-wider pt-3 pl-12 leading-relaxed text-gray-500 ">
           Excited is an understatement! 😄 Hi again, I'm Ashley Delić, a
           Front-end developer based out of Kentucky, USA but born and raised in
           South Africa. From traveling the world as a cruise ship spa therapist
@@ -32,7 +35,7 @@ const About = () => {
       </div>
 
       <div>
-          <div>
+          <div data-AOS="fade-left" data-aos-duration="1500">
               <img src={AboutPic} alt="computer gif" width={400} />
           </div>
           

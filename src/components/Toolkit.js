@@ -8,6 +8,10 @@ import NodeIcon from "../assets/icons/node-icon.png";
 import ReactIcon from "../assets/icons/react-icon.png";
 import TailwindIcon from "../assets/icons/tailwind-icon.png";
 import VscIcon from "../assets/icons/vsc-icon.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 const Toolkit = () => {
   const icons = [
@@ -78,7 +82,7 @@ const Toolkit = () => {
           <p className="py-6 text-gray-500">These are the technologies I've worked with so far...</p>
         </div>
 
-        <div className="grid w-full grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 sm:px-0">
+        <div data-AOS="fade-down" data-aos-duration="1500" className="grid w-full grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 sm:px-0">
           {icons.map(({ id, title, src, style }) => (
             <div key={id} className={`hover:scale-105 duration-500 shadow-md rounded-lg p-1 text-center ${style}`}>
               <div className="p-12">

@@ -5,6 +5,10 @@ import PortfolioApp from '../assets/portfolio-app.png';
 import QuoteApp from '../assets/quote-app.png';
 import BlackJackApp from '../assets/blackjack-app.png';
 import DoughApp from '../assets/dough-app.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 
 
@@ -72,7 +76,7 @@ const Projects = () => {
           </div>
 
 
-<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
+<div data-AOS="fade-right" data-aos-duration="1500" className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
 
 {
               portfolio.map(({id, title, src, body, liveLink, codeLink}) => (

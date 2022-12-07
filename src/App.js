@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import SocialLinks from './components/SocialLinks'
@@ -7,9 +7,13 @@ import Projects from './components/Projects'
 import Toolkit from './components/Toolkit'
 import Contact from './components/Contact'
 
+
+
 function App() {
+ 
   return (
-  <div>
+  <div >
+
     <NavBar />
     <Home />
     <About />
