@@ -70,7 +70,7 @@ const Toolkit = () => {
   return (
     <div
       id="toolkit"
-      className=" bg-gradient-to-b from-white to-slate-100 w-full h-screen mt-40 sm:h-full sm:mt64 md:h-full"
+      className=" bg-gradient-to-b from-amber-50 to-slate-100 w-full h-screen pt-40 sm:h-full sm:mt64 md:h-full"
     >
       <div className=" max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full 0">
         <div className="pb-8">
