@@ -17,18 +17,23 @@ const NavBar = () => {
 
       <ul className="md:flex hidden mt-2 md:text-[22px] tracking-widest">
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
+          <Link to="#home" smooth duration={500}></Link>
           <a href="#home">Home</a>
         </li>
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
+        <Link to="#home" smooth duration={500}></Link>
           <a href="#about">About me</a>
         </li>
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
+        <Link to="#home" smooth duration={500}></Link>
           <a href="#projects">Projects</a>
         </li>
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
+        <Link to="#home" smooth duration={500}></Link>
           <a href="#toolkit">Toolkit</a>
         </li>
         <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">
+        <Link to="#home" smooth duration={500}></Link>
           <a href="#contact">Contact</a>
         </li>
       </ul>
