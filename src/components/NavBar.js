@@ -1,10 +1,33 @@
 import React, { useState } from "react";
 import { FaThList, FaRegWindowClose } from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
-import * as Scroll from "react-scroll";
+
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const links =[
+    {
+      id: 1,
+      link: 'Home'
+    },
+    {
+      id: 1,
+      link: 'About me'
+    },
+    {
+      id: 1,
+      link: 'Projects'
+    },
+    {
+      id: 1,
+      link: 'Toolkit'
+    },
+    {
+      id: 1,
+      link: 'Contact',
+      style: 'bg-green-700 rounded hover:bg-green-800'
+    },
+  ]
 
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-orange-400 px-4 fixed">
@@ -16,26 +39,13 @@ const NavBar = () => {
       </div>
 
       <ul className="md:flex hidden mt-2 md:text-[22px] tracking-widest">
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-          <Link to="#home" smooth duration={500}></Link>
-          <a href="#home">Home</a>
-        </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-        <Link to="#home" smooth duration={500}></Link>
-          <a href="#about">About me</a>
-        </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-        <Link to="#home" smooth duration={500}></Link>
-          <a href="#projects">Projects</a>
-        </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-        <Link to="#home" smooth duration={500}></Link>
-          <a href="#toolkit">Toolkit</a>
-        </li>
-        <li className="px-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">
-        <Link to="#home" smooth duration={500}></Link>
-          <a href="#contact">Contact</a>
-        </li>
+        {links.map(({id, link, style}) => (
+  <li key={id} className={`px-4 cursor-pointer ${style} text-white hover:scale-110 duration-200 font-normal`}>
+  {link}
+ </li>
+        ))}
+      
+        
       </ul>
 
       <div
@@ -47,18 +57,12 @@ const NavBar = () => {
 
       {nav && (
         <ul className="flex justify-center flex-col items-center absolute top-0 left-0 w-full h-screen bg-transparent bg-gray-600 text-white">
-          <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-            <a href="/#home">Home</a>
-          </li>
-          <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-            <a href="/#about">About Me</a>
-          </li>
-          <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal">
-            <a href="/#projects">Projects</a>
-          </li>
-          <li className="py-4 px-4  cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800">
-            <a href="/#contact">Contact</a>
-          </li>
+         {links.map(({id, link, style}) => (
+  <li key={id} className={`px-4 cursor-pointer ${style} text-white hover:scale-110 duration-200 font-normal`}>
+  {link}
+ </li>
+        ))}
+          
         </ul>
       )}
     </div>
