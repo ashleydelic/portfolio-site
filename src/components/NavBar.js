@@ -8,23 +8,23 @@ const NavBar = () => {
   const links =[
     {
       id: 1,
-      link: 'Home'
+      link: 'home'
     },
     {
-      id: 1,
-      link: 'About me'
+      id: 2,
+      link: 'about'
     },
     {
-      id: 1,
-      link: 'Projects'
+      id: 3,
+      link: 'projects'
     },
     {
-      id: 1,
-      link: 'Toolkit'
+      id: 4,
+      link: 'toolkit'
     },
     {
-      id: 1,
-      link: 'Contact',
+      id: 5,
+      link: 'contact',
       style: 'bg-green-700 rounded hover:bg-green-800'
     },
   ]
@@ -38,7 +38,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <ul className="md:flex hidden mt-2 md:text-[22px] tracking-widest">
+      <ul className="md:flex hidden mt-2 md:text-[22px] capitalize tracking-widest">
         {links.map(({id, link, style}) => (
   <li key={id} className={`px-4 cursor-pointer ${style} text-white hover:scale-110 duration-200 font-normal`}>
     <Link
