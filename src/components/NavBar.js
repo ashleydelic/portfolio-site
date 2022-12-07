@@ -41,10 +41,10 @@ const NavBar = () => {
 
       { nav && (
               <ul className="flex justify-center flex-col items-center absolute top-0 left-0 w-full h-screen bg-transparent bg-gray-600 text-white">
-              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#home"></a>Home</li>
-              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#about"></a>About Me</li>
-              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="#projects"></a>Projects</li>
-              <li  className="py-4 px-4  cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800"><a href="#contact"></a>Contact</li>
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="/#home">Home</a></li>
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="/#about">About Me</a></li>
+              <li className="py-4 cursor-pointer text-white hover:scale-110 duration-200 font-normal"><a href="/#projects">Projects</a></li>
+              <li  className="py-4 px-4  cursor-pointer text-white hover:scale-110 duration-200 font-normal bg-green-700 rounded hover:bg-green-800"><a href="/#contact">Contact</a></li>
           </ul>
       )}
 
